@@ -6,7 +6,7 @@
 }
 
 body {
-    /* MENGUBAH FONT UTAMA */
+    /* Font Utama */
     font-family: 'Plus Jakarta Sans', sans-serif; 
     background-color: #f4f4f9; 
     color: #121212;
@@ -41,16 +41,15 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    /* MENGGUNAKAN WEIGHT EXTRA BOLD UNTUK EFEK MAKSIMAL */
-    font-weight: 800; 
+    font-weight: 800; /* Extra Bold */
     line-height: 1.2;
     margin-bottom: 8px;
 }
 
 header p {
     font-size: 1rem;
-    font-weight: 400; /* Regular */
-    color: #555; 
+    font-weight: 400;
+    color: #444; /* Kontras lebih baik untuk SEO & UX */
     max-width: 500px;
     margin: 0 auto;
 }
@@ -64,7 +63,7 @@ header p {
     padding: 16px 20px;
     margin: 16px 0;
     text-decoration: none;
-    font-weight: 500; /* Medium */
+    font-weight: 500;
     font-size: 1.1rem;
     
     transition: all 0.3s ease-in-out;
@@ -86,15 +85,34 @@ header p {
     color: #333;
     margin: 0 15px;
     font-size: 2rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .socials a:hover {
     color: #121212;
+    transform: scale(1.1);
 }
 
+/* --- Screen Reader Only --- */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
 
-/* --- Media Query untuk Layar Kecil (Mobile) --- */
+/* --- Focus State untuk Aksesibilitas --- */
+a:focus {
+    outline: 2px solid #ff9800;
+    outline-offset: 4px;
+}
+
+/* --- Media Query untuk Mobile --- */
 @media (max-width: 480px) {
     header h1 {
         font-size: 2rem;

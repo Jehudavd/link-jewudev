@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nama Anda | Web Developer</title>
 
+    <!-- SEO Title -->
+    <title>@jehudavd | Fullstack Developer</title>
+
+    <!-- Meta Description untuk SEO -->
+    <meta name="description" content="Profil @jehudavd - Fullstack developer yang kadang suka nulis. Lihat proyek GitHub, tulisan di Karyakarsa, atau konsultasi pembuatan aplikasi & web.">
+
+    <!-- Schema Markup untuk SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jehudavd",
+      "jobTitle": "Fullstack Developer",
+      "url": "https://github.com/Jehudavd",
+      "sameAs": [
+        "https://instagram.com/jehudavd",
+        "https://karyakarsa.com/jehudavd",
+        "https://open.spotify.com/playlist/2HtPL8SRjk5H851ZvtOYgC"
+      ]
+    }
+    </script>
+
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     
     <link rel="stylesheet" href="style.css">
@@ -17,23 +38,28 @@
 
     <main class="container">
         <header>
-            <!-- <img src="" alt="Foto Profil Anda" class="profile-picture"> -->
+            <!-- Gambar profil dengan alt text -->
+            <!-- <img src="foto-profil.jpg" alt="Foto Jehudavd, Fullstack Developer" class="profile-picture"> -->
             <h1>@jehudavd</h1>
-            <p>fullstack developer yang kadang suka nulis juga.</p>
+            <p>fullstack developer yang kadang suka nulis juga.<br/> terbuka untuk proyek, kolaborasi, dan konsultasi pembuatan aplikasi atau website.</p>
         </header>
 
-        <section class="links">
-            <!-- <a href="#" target="_blank">Portfolio Saya</a> -->
-            <!-- <a href="#" target="_blank">Profil LinkedIn</a> -->
-            <a href="https://github.com/Jehudavd" target="_blank">Proyek di GitHub</a>
-            <a href="https://karyakarsa.com/jehudavd" target="_blank">Tulisan di Karyakarsa</a>
-            <a href="mailto:me.jewudev@gmail.com?subject=Konsultasi%20Aplikasi/Web&body=Halo%20saya%20ingin%20konsultasi%20aplikasi/web%20pada..." target="_blank">Konsultasi Aplikasi/Web</a>
-        </section>
+        <!-- Navigasi utama -->
+        <nav class="links">
+            <a href="https://github.com/Jehudavd" target="_blank" rel="noopener noreferrer">Proyek di GitHub</a>
+            <a href="https://karyakarsa.com/jehudavd" target="_blank" rel="noopener noreferrer">Tulisan di Karyakarsa</a>
+            <a href="mailto:me.jewudev@gmail.com?subject=Konsultasi%20Aplikasi/Web&body=Halo%20saya%20ingin%20konsultasi%20aplikasi/web%20pada..." target="_blank" rel="noopener noreferrer">Konsultasi Aplikasi/Web</a>
+        </nav>
         
         <footer class="socials">
-            <!-- <a href="#" target="https://github.com/Jehudavd" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a> -->
-            <a href="https://open.spotify.com/playlist/2HtPL8SRjk5H851ZvtOYgC?si=PsAxttukQU6LN9ZV_lTfEw" target="_blank" aria-label="Spotify"><i class="ph-fill ph-spotify-logo"></i></a>
-            <a href="https://instagram.com/jehudavd" target="_blank" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="https://open.spotify.com/playlist/2HtPL8SRjk5H851ZvtOYgC?si=PsAxttukQU6LN9ZV_lTfEw" target="_blank" rel="noopener noreferrer" aria-label="Spotify Jehudavd">
+                <i class="ph-fill ph-spotify-logo"></i>
+                <span class="sr-only">Spotify Jehudavd</span>
+            </a>
+            <a href="https://instagram.com/jehudavd" target="_blank" rel="noopener noreferrer" aria-label="Instagram Jehudavd">
+                <i class="ph-fill ph-instagram-logo"></i>
+                <span class="sr-only">Instagram Jehudavd</span>
+            </a>
         </footer>
     </main>
 
