@@ -1,0 +1,109 @@
+/* --- Global Reset & Basic Setup --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* MENGUBAH FONT UTAMA */
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    background-color: #f4f4f9; 
+    color: #121212;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- Main Container --- */
+.container {
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+}
+
+/* --- Header & Profile --- */
+header {
+    margin-bottom: 40px;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #121212;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    /* MENGGUNAKAN WEIGHT EXTRA BOLD UNTUK EFEK MAKSIMAL */
+    font-weight: 800; 
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 400; /* Regular */
+    color: #555; 
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* --- Link Buttons --- */
+.links a {
+    display: block;
+    background-color: transparent;
+    border: 2px solid #121212;
+    color: #121212;
+    padding: 16px 20px;
+    margin: 16px 0;
+    text-decoration: none;
+    font-weight: 500; /* Medium */
+    font-size: 1.1rem;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+    background-color: #121212;
+    color: #f4f4f9;
+    transform: scale(1.03);
+}
+
+/* --- Social Icons --- */
+.socials {
+    margin-top: 40px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #121212;
+}
+
+
+/* --- Media Query untuk Layar Kecil (Mobile) --- */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 0.9rem;
+    }
+    .links a {
+        padding: 14px;
+        font-size: 1rem;
+    }
+}
